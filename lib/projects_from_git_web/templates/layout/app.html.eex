@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Awesome Elixir</title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body>
+  <header>
+    
+    <div class="container">
+    
+      <h1>Awesome Elixir</h1>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="/">All</a>
+          </li>
+            
+            <li>
+              <a href="/?min_stars=0">Custom</a>
+            </li>
+            
+        </ul>
+      </nav>
+
+
+      <p> Elixir is awesome. And it has a vast awesome <a href="https://github.com/h4cc/awesome-elixir">h4cc/awesome-elixir</a>. 
+      This is a mirror of it where each 
+      library is marked with number of stars
+      at <a href="https://github.com">Github</a> and 
+      number of days since the last commit.</p>
+
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+      <main role="main">
+        <%= render @view_module, @view_template, assigns %>
+      </main>
+
+    </div> <!-- /container -->
+    </header>
+    <script src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

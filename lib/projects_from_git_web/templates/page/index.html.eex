@@ -1,0 +1,23 @@
+<h1> Contents </h1>
+
+<%= for groups0 <- @groups do %>
+  <li>
+    <a href="#<%= groups0.group %>"><%= groups0.group %></a>
+  </li>
+<% end %>
+
+<%= for groups0 <- @groups do %>
+    <hr>
+    <p>
+      <h2 id="<%= groups0.group %>"><%= groups0.group %></h2>
+    </p>
+
+    <%= for projs0 <- @projs0 do %>
+        <%= if groups0.group == projs0.group do %>
+            <li>  
+            <a href="<%= projs0.link %>"><%= projs0.name %></a>
+            Stars: <%= projs0.stars %> Days: <%= projs0.days %> — <%= projs0.desc %>
+            </li>
+        <% end %>
+    <% end %>
+<% end %>
