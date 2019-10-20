@@ -18,7 +18,7 @@ Install Phoenix and Postgres database on Windows using [chocolatey](https://choc
   - Install phoenix: `mix archive.install hex phx_new 1.4.10`
   - Install Nodejs: `choco install nodejs.install -y` and brunch `npm install -g brunch`
   - Install postgres database`choco install postgresql`
-  - set default password for postgres database: postgres (`ALTER USER Postgres WITH PASSWORD 'postgres'`)
+  - Set default password for postgres database: postgres (`ALTER USER Postgres WITH PASSWORD 'postgres'`)
 
 ## Run  
 Open cmd session, go to the root of project directory and do the following:
@@ -31,9 +31,9 @@ Open cmd session, go to the root of project directory and do the following:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Clean up database
-Clean up development and test database
+Clean up development and test databases
   - Run `mix ecto.drop`
-  - drop database projects_from_git_test;
+  - Run in postgres database `drop database projects_from_git_test`;
 
 ## Bugs and feature requests
 List a bug and feature request: [Issues](https://github.com/akardapolov/awesome-elixir/issues)  
