@@ -1,0 +1,5 @@
+{"name":"dflow","desc":"Pipelined flow processing engine.","link":"https://github.com/dalmatinerdb/dflow","stars":33,"days":0,"group":"Actors"}
+{"name":"workex","desc":"Backpressure and flow control in EVM processes.","link":"https://github.com/sasa1977/workex","stars":47,"days":0,"group":"Actors"}
+{"name":"array","desc":"An Elixir wrapper library for Erlang's array.","link":"https://github.com/takscape/elixir-array","stars":45,"days":0,"group":"Algorithms and Data structures"}
+{"name":"bimap","desc":"Pure Elixir implementation of bidirectional maps and multimaps.","link":"https://github.com/mkaput/elixir-bimap","stars":63,"days":0,"group":"Algorithms and Data structures"}
+{"name":"bitmap","desc":"Pure Elixir implementation of bitmaps.","link":"https://github.com/hashd/bitmap-elixir","stars":38,"days":0,"group":"Algorithms and Data structures"}
